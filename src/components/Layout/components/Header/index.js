@@ -7,6 +7,7 @@ import { faCircleXmark, faSpinner, faMagnifyingGlass } from '@fortawesome/free-s
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import { Wrapper as PopperWrapper } from '~/components/Layout/Popper';
+import Button from '~/components/Button';
 import AccountItem from '~/components/AccountItem';
 const cx = classNames.bind(styles);
 
@@ -53,7 +54,9 @@ function Header() {
                         </button>
                     </div>
                 </Tippy>
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                    <Button primary>Log in</Button>
+                </div>
             </div>
         </header>
     );
